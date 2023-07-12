@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/emptyFragment">
+
+    <fragment
+        android:id="@+id/emptyFragment"
+        android:name="com.example.baseandroid.view.empty.EmptyFragment"
+        android:label="EmptyFragment" >
+        <action
+            android:id="@+id/action_emptyFragment_to_emptyFragment2"
+            app:destination="@id/emptyFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/emptyFragment2"
+        android:name="com.example.baseandroid.view.empty.EmptyFragment2"
+        android:label="EmptyFragment2" />
+</navigation>
